@@ -1,23 +1,32 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
-<ul>
-    <li>
-        <a href={`/${lang}/home/`}>
-          {t('nav.home')}
-        </a>
-    </li>
-    <li>
-        <a href={`/${lang}/about/`}>
-          {t('nav.about')}
-        </a>
-    </li>
-    <li>
-        <a href="https://twitter.com/astrodotbuild">
-          {t('nav.twitter')}
-        </a>
-    </li>
-</ul>
+
+<header>
+  <div class="container">
+    <a class="logo" href="/"> <svg><!-- SVG Logo goes here --></svg></a>
+    <nav>
+      <a href={`/${lang}/`}>
+        {t("nav.home")}
+      </a>
+      <a href={`/${lang}/concurso/`}>
+        {t("nav.concurso")}
+      </a>
+      <a href={`/${lang}/donde/`}>
+        {t("nav.donde")}
+      </a>
+      <a href={`/${lang}/patrocinadores/`}>
+        {t("nav.patrocinadores")}
+      </a>
+      <a href={`/${lang}/reglas/`}>
+        {t("nav.reglas")} 
+      </a> 
+      <a href={`/${lang}/salidas/`}>
+        {t("nav.salidas")}
+      </a>
+    </nav>
+  </div>
+</header>
