@@ -1,16 +1,45 @@
 ---
+import Navbar from "./Navbar.astro";
 ---
 
-<header>
-  <div class="container">
-    <a class="logo" href="/"> <svg><!-- SVG Logo goes here --></svg></a>
-    <nav>
-      <a href="/">Bienvenidos</a>
-      <a href="/es/donde">De donde Salimos?</a>
-      <a href="/es/patrocinadores">Patrocinadores</a>
-      <a href="/es/reglas">Reglamentonp</a>
-      <a href="/es/salidas">Calendario y Salidas</a>
-      <a href="/es/concurso">Concurso KM</a>
-    </nav>
-  </div>
+<header class="header">
+  <Navbar
+    items={[
+      {
+        label: "Inicio",
+        url: "#home",
+        active: true,
+      },
+      {
+        label: "Salidas",
+        url: "#salidas",
+      },
+      {
+        label: "Patrocinadores",
+        url: "#partners",
+      },
+      {
+        label: "Reglamento",
+        url: "#rules",
+      },
+      {
+        label: "Encuentros",
+        url: "#join",
+      },
+    ]}
+  />
 </header>
+
+<style>
+  .header {
+    position: sticky;
+    height: 12vh;
+    z-index: 1;
+
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+</style>
