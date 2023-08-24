@@ -1,6 +1,7 @@
 ---
-import Header from "./Header.astro";
+import Header from "./header.astro";
 import heroImage from "../assets/heroImage.jpeg";
+import Footer from "./footer.astro";
 ---
 
 <main class="hero">
@@ -17,9 +18,11 @@ import heroImage from "../assets/heroImage.jpeg";
       <img
         src={heroImage}
         alt="Fotografía de los socios fundadores del Club Ciclista Bidebieta"
-      />
+      /> 
     </div>
+    <br>
   </div>
+  <Footer />
 </main>
 
 <style>
@@ -54,6 +57,7 @@ import heroImage from "../assets/heroImage.jpeg";
   }
 
   .hero-text > h2 {
+    font-family: 'TelefanteBlack';
     font-size: 6rem;
     font-weight: 700;
     text-decoration: underline solid var(--primary-color);
@@ -63,6 +67,7 @@ import heroImage from "../assets/heroImage.jpeg";
     font-size: 10rem;
     font-weight: 700;
     color: var(--brand-color);
+    font-family: 'TelefanteBlack';
   }
 
   .hero-text > h3 {
