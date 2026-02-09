@@ -1,2 +1,0 @@
-# ccbidebieta
-Club Ciclista Bidebieta
