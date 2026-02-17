@@ -1,12 +1,12 @@
 :root {
-    --primary: #ff6b35;
-    --secondary: #004e89;
-    --accent: #1a659e;
-    --light: #f7f9fb;
-    --dark: #1e2749;
+    --primary: #00d9ff;
+    --secondary: #0a0e27;
+    --accent: #7c3aed;
+    --light: #f8fafc;
+    --dark: #1e293b;
     --white: #ffffff;
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-2: linear-gradient(135deg, #00d9ff 0%, #7c3aed 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 nav {
-    background: rgba(0, 78, 137, 0.95);
+    background: rgba(10, 14, 39, 0.95);
     backdrop-filter: blur(10px);
     color: var(--white);
     padding: 1rem 0;
@@ -42,6 +42,7 @@ nav {
     top: 0;
     z-index: 100;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-bottom: 2px solid var(--primary);
 }
 
 nav .container {
@@ -124,7 +125,7 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, rgba(0, 78, 137, 0.9) 0%, rgba(26, 101, 158, 0.9) 100%),
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.9) 0%, rgba(124, 58, 237, 0.85) 100%),
                 url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=1600&q=80') center/cover;
     color: var(--white);
     padding: 8rem 2rem;
@@ -140,8 +141,8 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(26, 101, 158, 0.2) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.3) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -156,6 +157,7 @@ nav a:hover {
     margin-bottom: 2rem;
     filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
     animation: fadeInDown 1s ease-out;
+    border-radius: 8px;
 }
 
 @keyframes fadeInDown {
@@ -280,7 +282,7 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    background: linear-gradient(135deg, var(--primary) 0%, #ff8c61 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     color: var(--white);
     padding: 1rem 2rem;
     text-decoration: none;
@@ -288,7 +290,7 @@ nav a:hover {
     margin-top: 1rem;
     transition: all 0.3s ease;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.4);
     position: relative;
     overflow: hidden;
 }
@@ -310,7 +312,7 @@ nav a:hover {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 217, 255, 0.6);
 }
 
 details {
@@ -334,7 +336,7 @@ details summary:hover {
 }
 
 details[open] summary {
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: var(--white);
     margin-bottom: 2rem;
 }
@@ -461,10 +463,11 @@ details[open] summary {
 }
 
 .btn-sponsor:hover {
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: var(--white);
+    border-color: var(--primary);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(26, 101, 158, 0.3);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
 }
 
 .club-gallery {
@@ -528,7 +531,7 @@ details[open] summary {
 }
 
 footer {
-    background: linear-gradient(135deg, #1e2749 0%, #004e89 100%);
+    background: linear-gradient(135deg, #0a0e27 0%, #1e293b 100%);
     color: var(--white);
     text-align: center;
     padding: 3rem 2rem;
