@@ -17,6 +17,7 @@ Este sitio ha sido migrado desde WordPress a GitHub Pages para:
 ✅ **Responsive:** Funciona en móvil, tablet y desktop
 ✅ **Rápido:** Sitio estático optimizado
 ✅ **Gratis:** Hosting en GitHub Pages
+✅ **SEO Optimizado:** Meta tags, structured data, sitemap y robots.txt
 
 ## Configuración de GitHub Pages
 
@@ -113,6 +114,8 @@ clubciclistabidebieta/
 ├── lang.js             # Sistema multiidioma
 ├── 404.html           # Página de error
 ├── CNAME              # Configuración de dominio
+├── robots.txt         # Instrucciones para buscadores
+├── sitemap.xml        # Mapa del sitio para SEO
 └── README.md          # Este archivo
 ```
 
