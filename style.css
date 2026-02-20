@@ -61,6 +61,7 @@ nav .container {
 nav h1 {
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: 'Telefant Black', 'Inter', sans-serif;
 }
 
 nav ul {
@@ -151,6 +152,22 @@ nav a:hover {
     z-index: 1;
 }
 
+.hero-maillot {
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto 2rem;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.hero-maillot:hover {
+    transform: scale(1.05);
+}
+    z-index: 1;
+}
+
 .hero-logo {
     max-width: 180px;
     height: auto;
@@ -177,6 +194,7 @@ nav a:hover {
     font-weight: 800;
     text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
     animation: fadeInUp 1s ease-out 0.2s both;
+    font-family: 'Telefant Black', 'Inter', sans-serif;
 }
 
 @keyframes fadeInUp {
@@ -394,6 +412,8 @@ details[open] summary {
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .sponsor-card::before {
@@ -448,6 +468,7 @@ details[open] summary {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
     font-weight: 700;
+    flex-grow: 1;
 }
 
 .btn-sponsor {
