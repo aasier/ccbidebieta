@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club Ciclista Bidebieta - Basauri, Bizkaia | Ciclismo y Cicloturismo</title>
-    <meta name="description" content="Club Ciclista Bidebieta en Basauri, Bizkaia. Salidas todos los sábados, domingos y festivos. Únete a nuestro club de ciclismo y cicloturismo en el País Vasco.">
-    <meta name="keywords" content="club ciclista, bidebieta, basauri, bizkaia, ciclismo, cicloturismo, bicicleta, país vasco, euskadi, salidas ciclistas">
+    <meta name="description" content="Club Ciclista Bidebieta en Basauri, Bizkaia. Salidas todos los sábados, domingos y festivos desde Urbi. Únete a nuestro club de ciclismo y cicloturismo en el País Vasco.">
+    <meta name="keywords" content="club ciclista, bidebieta, basauri, bizkaia, ciclismo, cicloturismo, bicicleta, país vasco, euskadi, salidas ciclistas, urbi, club ciclismo basauri">
     <meta name="author" content="Club Ciclista Bidebieta">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://www.clubciclistabidebieta.com">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.clubciclistabidebieta.com">
-    <meta property="og:title" content="Club Ciclista Bidebieta - Basauri, Bizkaia">
-    <meta property="og:description" content="Club de ciclismo en Basauri. Salidas todos los sábados, domingos y festivos desde Urbi.">
-    <meta property="og:image" content="https://www.clubciclistabidebieta.com/wp-content/uploads/2024/01/CCBidebieta2024.png">
+    <meta property="og:title" content="Club Ciclista Bidebieta - Basauri, Bizkaia | Ciclismo y Cicloturismo">
+    <meta property="og:description" content="Club de ciclismo en Basauri. Salidas todos los sábados, domingos y festivos desde Urbi. Únete a nuestro club de cicloturismo en el País Vasco.">
+    <meta property="og:image" content="https://www.clubciclistabidebieta.com/maillot.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Maillot Club Ciclista Bidebieta">
     <meta property="og:locale" content="es_ES">
     <meta property="og:locale:alternate" content="eu_ES">
+    <meta property="og:site_name" content="Club Ciclista Bidebieta">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Club Ciclista Bidebieta - Basauri">
-    <meta name="twitter:description" content="Club de ciclismo en Basauri. Salidas todos los sábados, domingos y festivos.">
-    <meta name="twitter:image" content="https://www.clubciclistabidebieta.com/wp-content/uploads/2024/01/CCBidebieta2024.png">
+    <meta name="twitter:title" content="Club Ciclista Bidebieta - Basauri, Bizkaia">
+    <meta name="twitter:description" content="Club de ciclismo en Basauri. Salidas todos los sábados, domingos y festivos desde Urbi.">
+    <meta name="twitter:image" content="https://www.clubciclistabidebieta.com/maillot.png">
+    <meta name="twitter:image:alt" content="Maillot Club Ciclista Bidebieta">
     
     <!-- Geo Tags -->
     <meta name="geo.region" content="ES-PV">
     <meta name="geo.placename" content="Basauri">
     <meta name="geo.position" content="43.237895;-2.876323">
     <meta name="ICBM" content="43.237895, -2.876323">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="maillot.png" as="image">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,9 +65,11 @@
         "name": "Club Ciclista Bidebieta",
         "alternateName": "Bidebieta T.E.",
         "url": "https://www.clubciclistabidebieta.com",
-        "logo": "https://www.clubciclistabidebieta.com/wp-content/uploads/2024/01/CCBidebieta2024.png",
-        "description": "Club de ciclismo y cicloturismo en Basauri, Bizkaia. Salidas todos los sábados, domingos y festivos.",
+        "logo": "https://www.clubciclistabidebieta.com/maillot.png",
+        "image": "https://www.clubciclistabidebieta.com/maillot.png",
+        "description": "Club de ciclismo y cicloturismo en Basauri, Bizkaia. Salidas todos los sábados, domingos y festivos desde Urbi. Organizamos rutas, concurso de kilómetros y actividades ciclistas.",
         "sport": "Ciclismo",
+        "foundingDate": "1980",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Aparcamiento Urbi, junto al paso a nivel",
@@ -76,6 +87,10 @@
             "@type": "Place",
             "name": "País Vasco"
         },
+        "memberOf": {
+            "@type": "Organization",
+            "name": "Federación Vasca de Ciclismo"
+        },
         "sponsor": [
             {
                 "@type": "Organization",
@@ -88,12 +103,31 @@
                 "url": "https://www.osasunaldeweb.com"
             }
         ],
+        "event": {
+            "@type": "Event",
+            "name": "Salidas Ciclistas Semanales",
+            "description": "Salidas en bicicleta todos los sábados, domingos y festivos",
+            "location": {
+                "@type": "Place",
+                "name": "Aparcamiento Urbi",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Basauri",
+                    "addressRegion": "Bizkaia"
+                }
+            },
+            "eventSchedule": {
+                "@type": "Schedule",
+                "byDay": ["Saturday", "Sunday"],
+                "repeatFrequency": "Weekly"
+            }
+        },
         "sameAs": []
     }
     </script>
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Navegación principal">
         <div class="container">
             <h1>Club Ciclista Bidebieta</h1>
             <div class="nav-right">
@@ -104,14 +138,15 @@
                     <li><a href="#patrocinadores" data-es="Patrocinadores" data-eu="Babesleak">Patrocinadores</a></li>
                     <li><a href="#contacto" data-es="Contacto" data-eu="Kontaktua">Contacto</a></li>
                 </ul>
-                <div class="lang-switch">
-                    <button onclick="setLang('es')" class="active" id="lang-es">ES</button>
-                    <button onclick="setLang('eu')" id="lang-eu">EU</button>
+                <div class="lang-switch" role="group" aria-label="Selector de idioma">
+                    <button onclick="setLang('es')" class="active" id="lang-es" aria-label="Cambiar a español">ES</button>
+                    <button onclick="setLang('eu')" id="lang-eu" aria-label="Aldatu euskarara">EU</button>
                 </div>
             </div>
         </div>
     </nav>
 
+    <main>
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h2>Bidebieta T.E.</h2>
@@ -273,10 +308,12 @@
             </div>
         </div>
     </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
-            <p>&copy; <span id="current-year">2026</span> Club Ciclista Bidebieta</p>
+            <p>&copy; <span id="current-year">2026</span> Club Ciclista Bidebieta - <span data-es="Basauri, Bizkaia" data-eu="Basauri, Bizkaia">Basauri, Bizkaia</span></p>
+            <p><small data-es="Club de ciclismo y cicloturismo en el País Vasco" data-eu="Txirrindularitza eta zikloturismo kluba Euskal Herrian">Club de ciclismo y cicloturismo en el País Vasco</small></p>
         </div>
     </footer>
 
