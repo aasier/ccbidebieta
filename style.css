@@ -55,12 +55,13 @@ nav .container {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .logo-basauri {
-    height: 50px;
+    height: 45px;
     width: auto;
+    object-fit: contain;
 }
 
 .nav-right {
@@ -593,12 +594,15 @@ footer p {
     }
     
     .nav-left {
-        flex-direction: column;
-        text-align: center;
+        gap: 0.75rem;
     }
     
     .logo-basauri {
-        height: 40px;
+        height: 35px;
+    }
+    
+    nav h1 {
+        font-size: 1.2rem;
     }
     
     .nav-right {
