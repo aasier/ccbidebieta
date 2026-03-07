@@ -6,10 +6,12 @@
     <meta name="description" content="Club Ciclista Bidebieta - Basauri, Bizkaia. Salidas todos los sábados, domingos y festivos.">
     <meta name="keywords" content="ciclismo, bidebieta, basauri, bizkaia, club ciclista, bicicleta">
     <title>404 - Página no encontrada | Club Ciclista Bidebieta</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="lang.js"></script>
     <style>
         .error-page {
-            min-height: 80vh;
+            min-height: 70vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -19,25 +21,41 @@
         .error-content h1 {
             font-size: 6rem;
             color: var(--primary);
+            margin: 0;
+        }
+        .error-maillot {
+            max-width: 200px;
+            margin: 2rem auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Navegación principal">
         <div class="container">
-            <h1>Club Ciclista Bidebieta</h1>
-            <ul>
-                <li><a href="/">Volver al inicio</a></li>
-            </ul>
+            <div class="nav-left">
+                <img src="basauri.png" alt="Ayuntamiento de Basauri" class="logo-basauri">
+                <h1>Club Ciclista Bidebieta</h1>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="/" data-es="Volver al inicio" data-eu="Hasierara itzuli">Volver al inicio</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Selector de idioma">
+                    <button onclick="setLang('es')" class="active" id="lang-es" aria-label="Cambiar a español">ES</button>
+                    <button onclick="setLang('eu')" id="lang-eu" aria-label="Aldatu euskarara">EU</button>
+                </div>
+            </div>
         </div>
     </nav>
 
     <div class="error-page">
         <div class="error-content">
             <h1>404</h1>
-            <h2>Página no encontrada</h2>
-            <p>Lo sentimos, la página que buscas no existe.</p>
-            <a href="/" class="btn">Volver al inicio</a>
+            <img src="maillot.png" alt="Maillot Club Ciclista Bidebieta" class="error-maillot">
+            <h2 data-es="Página no encontrada" data-eu="Orria ez da aurkitu">Página no encontrada</h2>
+            <p data-es="Lo sentimos, la página que buscas no existe." data-eu="Sentitzen dugu, bilatzen duzun orria ez da existitzen.">Lo sentimos, la página que buscas no existe.</p>
+            <a href="/" class="btn" data-es="Volver al inicio" data-eu="Hasierara itzuli">Volver al inicio</a>
         </div>
     </div>
 
